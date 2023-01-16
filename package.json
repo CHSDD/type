@@ -1,23 +1,19 @@
 {
-  "name": "type",
+  "name": "typechain",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" ",
+    "prestart": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CHSDD/type.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CHSDD/type/issues"
-  },
-  "homepage": "https://github.com/CHSDD/type#readme",
   "devDependencies": {
-    "typescript": "^4.9.4"
+    "@types/node": "^17.0.14",
+    "ts-node": "^10.4.0",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }
