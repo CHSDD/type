@@ -57,7 +57,6 @@ const createNewBlock = (data: string): Block => {
     previousBlock.hash,
     data,
     newTimestamp
-    
   );
   return newBlock;
 };
