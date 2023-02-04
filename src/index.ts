@@ -54,6 +54,7 @@ const createNewBlock = (data: string): Block => {
     newTimestamp
   );
   return newBlock;
+  
 };
 
 const getHashforBlock = (aBlock: Block): string =>
